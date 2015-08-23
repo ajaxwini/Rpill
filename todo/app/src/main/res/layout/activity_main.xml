@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/image">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YOUR LIST:"
+        android:textColor="#324567"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnADDItem"
+        android:layout_alignEnd="@+id/btnADDItem" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvItems"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/btnADDItem"
+        android:layout_below="@+id/textView"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewItem"
+        android:layout_alignTop="@+id/btnADDItem"
+        android:hint="enter a new item"
+        android:textColorHint="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnADDItem"
+        android:layout_toStartOf="@+id/btnADDItem"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD ITEM"
+        android:id="@+id/btnADDItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onADDItem"
+        />
+
+
+</RelativeLayout>
